@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/chat/style.css"/>
+    <title>Регистрация на сайте</title></head>
+<body class="chatbody"><h2>Регистрация на сайте</h2>
+<form class="chatform" action="save_user.php" method="post" enctype="multipart/form-data" id="reg">
+    <fieldset class="chatfieldset">
+        <legend>Данные для авторизации</legend>
+        <label>Ваш логин *: <input name="login" type="text" size="15" maxlength="15"/></label>
+        <hr/>
+        <label>Ваш пароль *:<input name="password" type="password" size="15" maxlength="15"/></label>
+        <hr/>
+        <label>Ваш E-mail *:<input name="email" type="email" size="15" maxlength="100"/></label><br/></fieldset>
+    <br/>
+    <fieldset class="chatfieldset">
+        <legend>Выберите аватар</legend>
+        <label>Изображение должно быть квадратной формы<br/>и иметь расширение jpg, gif или png:<br/><br/><input
+                type="FILE" name="fupload"/></label></fieldset>
+    <br/><!– В переменную fupload отправится изображение, которое выбрал пользователь.
+    <fieldset class="chatfieldset">
+        <legend>Введите код с картинки *:</legend>
+        <input type="text" name="capcha"/>
+        <div><img src="/chat/capcha/captcha.php"/></div>
+    </fieldset>
+    <p><input type="submit" name="submit" value="Зарегистрироваться"/>
+        <!– Кнопочка (type="submit") отправляет данные на
+        страничку save_user.php –></p></form>
+Звездочками (*) обозначены поля, обязательные для заполнения.<p><a href="/../">Вернуться</a></p></body>
+</html>
